@@ -112,9 +112,9 @@
 
   backDirectory(){
   echo "Starting backup directory ..."
-  tar -zcf wordpress.tar.gz     /var/www/html
-  tar -zcf wiki.tar.gz          /var/www/html/wiki
-  tar -zcf etherpad.tar.gz      /home/xiaoming/etherpad-lite
+  tar -zcPf wordpress.tar.gz     /var/www/html
+  tar -zcPf wiki.tar.gz          /var/www/html/wiki
+  tar -zcPf etherpad.tar.gz      /home/xiaoming/etherpad-lite
   echo "Backup directory success"
   }
 
